@@ -1,0 +1,571 @@
+/* =====================================================================
+   NORD-I HÜMÂYÛN — Obsidian teması
+   Gece Divanı: gece mürekkebi · altın varak · parşömen
+   Palet kaynağı: ~/.config/osman-nord/palette.sh
+   ===================================================================== */
+
+/* ---------------------------------------------------------------------
+   1 · Palet (karanlık)
+   --------------------------------------------------------------------- */
+.theme-dark {
+  --on-ink0: #131822;
+  --on-ink1: #1A2030;
+  --on-ink2: #232B42;
+  --on-ink3: #303A56;
+  --on-ink4: #3E4A6B;
+  --on-parchment: #E9E2D0;
+  --on-parchment2: #CFC7B4;
+  --on-muted: #7E88A3;
+  --on-gold: #D4AF37;
+  --on-gold2: #A9862B;
+  --on-gold3: #E4C55F;
+  --on-fez: #C94F57;
+  --on-cini: #5E8FB8;
+  --on-turkuaz: #4FA8A0;
+  --on-zumrut: #63B58C;
+  --on-lacivert: #7C8EE0;
+  --on-gul: #D48BA0;
+
+  /* zemin */
+  --background-primary: var(--on-ink0);
+  --background-primary-alt: #171D2B;
+  --background-secondary: #10151F;
+  --background-secondary-alt: #0D121A;
+  --background-modifier-hover: rgba(212, 175, 55, 0.07);
+  --background-modifier-active-hover: rgba(212, 175, 55, 0.12);
+  --background-modifier-border: var(--on-ink3);
+  --background-modifier-border-hover: var(--on-ink4);
+  --background-modifier-border-focus: var(--on-gold);
+  --background-modifier-form-field: var(--on-ink1);
+  --background-modifier-form-field-highlighted: var(--on-ink2);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
+  --background-modifier-cover: rgba(9, 12, 18, 0.75);
+  --background-modifier-success: var(--on-zumrut);
+  --background-modifier-error: var(--on-fez);
+  --background-modifier-error-hover: #E0666E;
+  --background-modifier-message: var(--on-ink2);
+  --background-modifier-error-rgb: 201, 79, 87;
+  --background-modifier-success-rgb: 99, 181, 140;
+
+  /* yazı */
+  --text-normal: var(--on-parchment);
+  --text-muted: #8F97AB;
+  --text-faint: #5F6885;
+  --text-on-accent: var(--on-ink0);
+  --text-on-accent-inverted: var(--on-parchment);
+  --text-error: var(--on-fez);
+  --text-warning: var(--on-gold);
+  --text-success: var(--on-zumrut);
+  --text-accent: var(--on-gold);
+  --text-accent-hover: var(--on-gold3);
+  --text-selection: rgba(212, 175, 55, 0.24);
+  --text-highlight-bg: rgba(212, 175, 55, 0.25);
+  --text-highlight-bg-active: rgba(212, 175, 55, 0.42);
+  --bold-color: #F2ECDC;
+  --bold-weight: 600;
+  --italic-color: var(--on-parchment2);
+
+  /* etkileşim */
+  --interactive-normal: var(--on-ink1);
+  --interactive-hover: var(--on-ink2);
+  --interactive-accent: var(--on-gold);
+  --interactive-accent-hover: var(--on-gold3);
+  --interactive-accent-rgb: 212, 175, 55;
+  --interactive-success: var(--on-zumrut);
+
+  /* çizgiler, kaydırma */
+  --divider-color: var(--on-ink2);
+  --divider-color-hover: var(--on-ink3);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--on-ink2);
+  --scrollbar-active-thumb-bg: var(--on-ink4);
+  --scrollbar-width: 10px;
+
+  /* sekme + başlık çubuğu */
+  --tab-container-background: #0E131C;
+  --tab-background-active: var(--on-ink0);
+  --tab-text-color: var(--on-muted);
+  --tab-text-color-focused: var(--on-parchment2);
+  --tab-text-color-active: var(--on-parchment);
+  --tab-outline-color: var(--on-ink2);
+  --tab-outline-width: 1px;
+  --tab-divider-color: var(--on-ink2);
+  --titlebar-background: #0E131C;
+  --titlebar-background-focused: #0E131C;
+  --titlebar-text-color: var(--on-muted);
+  --titlebar-text-color-focused: var(--on-parchment2);
+
+  /* şerit (ribbon) */
+  --ribbon-background: #0D121A;
+  --ribbon-background-collapsed: var(--on-ink0);
+
+  /* imleç — altın uç */
+  --caret-color: var(--on-gold);
+
+  /* etiketler */
+  --tag-color: var(--on-gold);
+  --tag-color-hover: var(--on-gold3);
+  --tag-background: rgba(212, 175, 55, 0.10);
+  --tag-background-hover: rgba(212, 175, 55, 0.18);
+  --tag-border-color: rgba(212, 175, 55, 0.35);
+  --tag-border-color-hover: rgba(212, 175, 55, 0.60);
+  --tag-border-width: 1px;
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.1em;
+  --tag-radius: 3px;
+
+  /* bağlantılar */
+  --link-color: var(--on-gold);
+  --link-color-hover: var(--on-gold3);
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: 1px;
+  --link-external-color: var(--on-cini);
+  --link-external-color-hover: #82A9CA;
+  --link-unresolved-color: var(--on-fez);
+  --link-unresolved-opacity: 0.65;
+
+  /* başlıklar */
+  --h1-color: var(--on-parchment);
+  --h2-color: var(--on-parchment);
+  --h3-color: var(--on-parchment);
+  --h4-color: var(--on-parchment2);
+  --h5-color: var(--on-parchment2);
+  --h6-color: var(--on-muted);
+  --h1-size: 2.1em;
+  --h2-size: 1.65em;
+  --h3-size: 1.35em;
+  --h4-size: 1.18em;
+  --h5-size: 1.08em;
+  --h6-size: 1em;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --inline-title-color: var(--on-parchment);
+  --inline-title-size: 2.1em;
+  --inline-title-weight: 600;
+
+  /* onay kutuları */
+  --checkbox-color: var(--on-gold);
+  --checkbox-color-hover: var(--on-gold3);
+  --checkbox-border-color: var(--on-ink4);
+  --checkbox-marker-color: var(--on-ink0);
+  --checklist-done-color: var(--on-muted);
+  --checklist-done-decoration: line-through;
+
+  /* alıntı */
+  --blockquote-border-thickness: 3px;
+  --blockquote-border-color: var(--on-gold2);
+  --blockquote-background-color: rgba(212, 175, 55, 0.05);
+  --blockquote-color: var(--on-parchment2);
+  --blockquote-font-style: italic;
+
+  /* kod */
+  --code-background: #0E131C;
+  --code-normal: var(--on-parchment2);
+  --code-comment: #5F6885;
+  --code-function: var(--on-lacivert);
+  --code-important: var(--on-fez);
+  --code-keyword: var(--on-gold);
+  --code-property: var(--on-cini);
+  --code-punctuation: var(--on-muted);
+  --code-string: var(--on-zumrut);
+  --code-tag: var(--on-gul);
+  --code-value: var(--on-gold3);
+
+  /* tipografi */
+  --font-text: "Inter", "Inter Variable", "Noto Sans", sans-serif;
+  --font-text-theme: "Inter", "Inter Variable", "Noto Sans", sans-serif;
+  --font-interface: "Inter", "Inter Variable", "Noto Sans", sans-serif;
+  --font-interface-theme: "Inter", "Inter Variable", "Noto Sans", sans-serif;
+  --font-monospace: "JetBrainsMono Nerd Font", monospace;
+  --font-monospace-theme: "JetBrainsMono Nerd Font", monospace;
+  --font-text-size: 18px;
+  --line-height-normal: 1.6;
+  --file-line-width: 42rem;
+  --font-ui-smaller: 12.5px;
+  --font-ui-small: 14px;
+  --font-ui-medium: 16px;
+}
+
+/* ---------------------------------------------------------------------
+   2 · Palet (aydınlık — parşömen)
+   --------------------------------------------------------------------- */
+.theme-light {
+  --background-primary: #F3EEDF;
+  --background-primary-alt: #EDE7D6;
+  --background-secondary: #E9E2CE;
+  --background-secondary-alt: #E2DAC3;
+  --background-modifier-border: #CFC7B4;
+  --background-modifier-border-hover: #B9B098;
+  --background-modifier-border-focus: #A9862B;
+  --background-modifier-hover: rgba(169, 134, 43, 0.08);
+  --background-modifier-active-hover: rgba(169, 134, 43, 0.14);
+  --background-modifier-form-field: #EDE7D6;
+  --text-normal: #232B42;
+  --text-muted: #5F6885;
+  --text-faint: #8F97AB;
+  --text-accent: #A9862B;
+  --text-accent-hover: #8C6E1F;
+  --text-selection: rgba(169, 134, 43, 0.22);
+  --text-highlight-bg: rgba(212, 175, 55, 0.45);
+  --interactive-accent: #A9862B;
+  --interactive-accent-hover: #8C6E1F;
+  --interactive-accent-rgb: 169, 134, 43;
+  --text-on-accent: #F3EEDF;
+  --caret-color: #A9862B;
+  --link-color: #8C6E1F;
+  --link-color-hover: #6F571A;
+  --divider-color: #D6CEBA;
+  --tag-color: #8C6E1F;
+  --tag-background: rgba(169, 134, 43, 0.10);
+  --code-background: #EAE3D0;
+}
+
+/* ---------------------------------------------------------------------
+   3 · Tipografi
+   --------------------------------------------------------------------- */
+.inline-title,
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
+.markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
+.markdown-source-view.mod-cm6 .HyperMD-header,
+.markdown-source-view.mod-cm6 .cm-header {
+  font-family: var(--font-interface);
+  letter-spacing: 0.01em;
+}
+
+.inline-title {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+  padding-bottom: 0.3em;
+}
+
+/* not başlığı: gövde ayarından bağımsız, arayüz yazısında (Inter) kalır */
+.inline-title,
+.markdown-source-view .inline-title,
+.markdown-reading-view .inline-title,
+.markdown-preview-view .inline-title {
+  font-family: var(--font-interface) !important;
+}
+
+.markdown-rendered h1,
+.markdown-rendered h2 {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.28);
+  padding-bottom: 0.22em;
+}
+
+.markdown-rendered h1::before {
+  content: "☾";
+  color: var(--text-accent);
+  opacity: 0.65;
+  margin-right: 0.45em;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+/* ---------------------------------------------------------------------
+   4 · Yazı gövdesi, alıntı, ayraç
+   --------------------------------------------------------------------- */
+.markdown-rendered {
+  font-family: var(--font-text);
+  line-height: var(--line-height-normal);
+}
+
+.markdown-rendered blockquote {
+  position: relative;
+  border-radius: 0 6px 6px 0;
+  padding-left: 2.4em;
+}
+
+.markdown-rendered blockquote::before {
+  content: "❝";
+  position: absolute;
+  left: 0.55em;
+  top: 0.35em;
+  font-size: 1.5em;
+  line-height: 1;
+  font-style: normal;
+  color: rgba(212, 175, 55, 0.35);
+}
+
+.markdown-rendered hr {
+  position: relative;
+  border: none;
+  height: 1px;
+  margin: 2.2em 0;
+  overflow: visible;
+  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.45), transparent);
+}
+
+.markdown-rendered hr::after {
+  content: "☾";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 0.7em;
+  background: var(--background-primary);
+  color: var(--on-gold);
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* bağlantılar */
+.markdown-rendered a.internal-link {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-decoration-color: rgba(212, 175, 55, 0.40);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.markdown-rendered a.internal-link:hover {
+  color: var(--on-gold3);
+  text-decoration-color: var(--on-gold3);
+}
+
+.markdown-rendered a.external-link {
+  color: var(--link-external-color);
+}
+
+.markdown-rendered a.external-link:hover {
+  color: var(--link-external-color-hover);
+}
+
+/* etiketler */
+.tag,
+a.tag {
+  font-family: var(--font-monospace);
+  font-size: 0.72em;
+  letter-spacing: 0.02em;
+  color: var(--tag-color);
+  background: var(--tag-background);
+  border: 1px solid var(--tag-border-color);
+  border-radius: var(--tag-radius);
+  padding: 0.1em 0.5em;
+}
+
+.tag:hover,
+a.tag:hover {
+  color: var(--tag-color-hover);
+  background: var(--tag-background-hover);
+  border-color: var(--tag-border-color-hover);
+}
+
+/* ---------------------------------------------------------------------
+   5 · Kod
+   --------------------------------------------------------------------- */
+.markdown-rendered code,
+.cm-s-obsidian span.cm-inline-code {
+  font-family: var(--font-monospace);
+  font-size: 0.86em;
+  color: var(--on-gold3);
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  border-radius: 3px;
+  padding: 0.08em 0.35em;
+}
+
+.markdown-rendered pre {
+  background: var(--code-background);
+  border: 1px solid var(--on-ink2);
+  border-radius: 6px;
+  padding: 0.9em 1.1em;
+}
+
+.markdown-rendered pre code {
+  font-size: 0.9em;
+  color: var(--code-normal);
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* canlı önizleme — CodeMirror */
+.cm-keyword { color: var(--code-keyword); }
+.cm-string, .cm-string-2 { color: var(--code-string); }
+.cm-number, .cm-atom { color: var(--code-value); }
+.cm-comment { color: var(--code-comment); font-style: italic; }
+.cm-def, .cm-variable-2 { color: var(--code-function); }
+.cm-variable { color: var(--code-normal); }
+.cm-property, .cm-attribute { color: var(--code-property); }
+.cm-builtin, .cm-type { color: var(--on-turkuaz); }
+.cm-operator, .cm-punctuation { color: var(--code-punctuation); }
+.cm-tag { color: var(--code-tag); }
+
+/* okuma görünümü — Prism */
+.markdown-rendered pre .token.keyword { color: var(--code-keyword); }
+.markdown-rendered pre .token.string { color: var(--code-string); }
+.markdown-rendered pre .token.number,
+.markdown-rendered pre .token.boolean { color: var(--code-value); }
+.markdown-rendered pre .token.comment { color: var(--code-comment); font-style: italic; }
+.markdown-rendered pre .token.function,
+.markdown-rendered pre .token.class-name { color: var(--code-function); }
+.markdown-rendered pre .token.property,
+.markdown-rendered pre .token.attr-name { color: var(--code-property); }
+.markdown-rendered pre .token.operator,
+.markdown-rendered pre .token.punctuation { color: var(--code-punctuation); }
+.markdown-rendered pre .token.tag { color: var(--code-tag); }
+.markdown-rendered pre .token.important { color: var(--code-important); }
+
+/* ---------------------------------------------------------------------
+   6 · Tablolar, gömülü notlar, çağrılar
+   --------------------------------------------------------------------- */
+.markdown-rendered table {
+  border-collapse: collapse;
+  border: 1px solid var(--on-ink2);
+}
+
+.markdown-rendered thead th {
+  font-family: var(--font-interface);
+  font-weight: 600;
+  color: var(--on-parchment);
+  background: var(--on-ink1);
+  border-bottom: 2px solid rgba(212, 175, 55, 0.45);
+  border-right: 1px solid var(--on-ink2);
+}
+
+.markdown-rendered td {
+  border-right: 1px solid var(--on-ink2);
+  border-bottom: 1px solid var(--on-ink2);
+}
+
+.markdown-rendered tbody tr:nth-child(even) {
+  background: rgba(26, 32, 48, 0.45);
+}
+
+.markdown-embed {
+  background: rgba(26, 32, 48, 0.40);
+  border-left: 2px solid rgba(212, 175, 55, 0.40);
+  border-radius: 0 6px 6px 0;
+}
+
+.markdown-embed-title {
+  font-family: var(--font-interface);
+}
+
+.callout {
+  background: rgba(26, 32, 48, 0.55);
+  border: 1px solid var(--on-ink2);
+  border-radius: 6px;
+}
+
+.callout-title {
+  font-family: var(--font-interface);
+  letter-spacing: 0.02em;
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  --callout-color: 212, 175, 55;
+}
+
+/* onay kutuları */
+input[type="checkbox"]:checked {
+  background-color: var(--on-gold);
+  border-color: var(--on-gold);
+}
+
+/* ---------------------------------------------------------------------
+   7 · Arayüz — sekmeler, şerit, dosya gezgini, durum çubuğu
+   --------------------------------------------------------------------- */
+.workspace-tab-header-inner-title {
+  font-family: var(--font-interface);
+  letter-spacing: 0.02em;
+}
+
+.workspace-tab-header.is-active {
+  box-shadow: inset 0 -2px 0 0 var(--on-gold);
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--on-parchment);
+}
+
+.side-dock-ribbon-action:hover,
+.workspace-ribbon .clickable-icon:hover {
+  color: var(--on-gold);
+}
+
+.nav-file-title,
+.nav-folder-title {
+  border-radius: 4px;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background: rgba(212, 175, 55, 0.06);
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  color: var(--on-parchment);
+  background: rgba(212, 175, 55, 0.10);
+}
+
+.nav-file-title.is-active {
+  box-shadow: inset 2px 0 0 var(--on-gold);
+}
+
+.status-bar {
+  font-family: var(--font-monospace);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: var(--on-muted);
+  background: #0D121A;
+  border-top: 1px solid var(--on-ink2);
+}
+
+/* pencereler, komut paleti */
+.modal,
+.prompt {
+  border: 1px solid var(--on-ink3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+.prompt-input {
+  font-family: var(--font-text);
+  font-size: 1.05em;
+}
+
+.suggestion-item.is-selected {
+  background: rgba(212, 175, 55, 0.12);
+}
+
+/* boş sekme — hilal filigranı */
+.workspace-leaf-content[data-type="empty"] {
+  position: relative;
+}
+
+.workspace-leaf-content[data-type="empty"]::after {
+  content: "☾";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 160px;
+  color: rgba(212, 175, 55, 0.05);
+  pointer-events: none;
+}
+
+.empty-state-title,
+.empty-state-action {
+  font-family: var(--font-interface);
+}
+
+.empty-state-action {
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 6px;
+}
+
+/* tuval kartları */
+.canvas-node {
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}

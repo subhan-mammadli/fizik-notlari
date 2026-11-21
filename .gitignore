@@ -1,0 +1,10 @@
+# İşletim sistemi / editör artıkları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian: makineye özel dosyalar
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
