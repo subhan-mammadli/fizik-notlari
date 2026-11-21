@@ -301,7 +301,7 @@ Pil açıksa telden akım geçer $\rightarrow$ akım demirdeki atomları hizaya 
 
 # Sağ El Metodu
 
-> 🖼️ *(Görsel arşivde bulunamadı: `Pasted image 20260822052320.png`)*
+![Sağ el metodu: başparmak akım yönünü, kıvrılan parmaklar manyetik alanın yönünü gösterir](../assets/Pasted%20image%2020260822052320.png)
 
 **Ne işe yarar, çok sade:**
 
@@ -322,7 +322,7 @@ Yukarıdaki çizimde bu görünüyor: akım yukarı gidiyor, halkalar da o yönd
 - Motor, hoparlör, röle gibi cihazlarda manyetik alanın yönünü bulmak için
 - Bir bobinde (sarım) parmaklarını akım yönünde kıvırırsan, **başparmağın o zaman N kutbunu gösterir** — bu, sarım için kuralın biraz farklı bir uygulaması
 
-> 🖼️ *(Görsel arşivde bulunamadı: `Pasted image 20260822052509.png`)*
+![Bobin (sarım) için sağ el kuralı: parmaklar sarım yönünde, başparmak N kutbunu gösterir](../assets/Pasted%20image%2020260822052509.png)
 
 Düz telde: **başparmak akım yönü, parmaklar alan yönü** idi.
 

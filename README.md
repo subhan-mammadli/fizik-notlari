@@ -62,9 +62,9 @@ Obsidian ayarları ve kullanılan tema (`Nord-i Hümâyûn`) repoda hazır geliy
 - **Kademeli inşa:** Her not, önceki notun üzerine kuruluyor. Diyot notu, doping ve bant teorisini bilmeden tam oturmuyor.
 - **Pratik bağlantı:** Teori bitince "tamir masasında bunu nasıl ölçersin?", "hangi durumda bu komponenti kullanırsın?" gibi kısımlar geliyor.
 
-## Bilinen Eksikler
+## Görseller
 
-Bazı notlardaki el çizimi/şema görselleri orijinal arşivde bulunamadığı için ilgili yerlerde "Görsel arşivde bulunamadı" notu görünebilir. Bu görseller tamamlandıkça repoya eklenecek.
+Notlardaki şemalar `assets/` klasöründe tutulur ve Markdown içinde göreli yollarla bağlanır; hem GitHub'da hem Obsidian'da görünür.
 
 ## Lisans
 

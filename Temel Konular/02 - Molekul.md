@@ -1,7 +1,7 @@
 # Molekul
 
 
-> 🖼️ *(Görsel arşivde bulunamadı: `Pasted image 20260805020430.png`)*
+![Atomun yapısı: çekirdek, protonlar, nötronlar ve katmanlardaki elektronlar](../assets/Pasted%20image%2020260805020430.png)
 
 
 Elektronlar, çekirdeğin etrafında, katman katman dizilirler. Katman yakınlığı, elektronun enerjisini belirleyen etkendir. Birinci katman, yani çekirdeğe en yakın katmanda, sadece 2 elektronluk yer vardır. Bu iki elektronun dönmesi için çok az bir enerjiye ihtiyacı vardır. İkinci katmanda 8 elektronluk yer vardır. Üçüncü katmanda 18 elektronluk yer vardır. Bu böyle arta arta gider.
